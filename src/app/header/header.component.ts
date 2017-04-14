@@ -4,7 +4,8 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
+  //providers[dataService] 產生只在此component用的Dataservice
 })
 export class HeaderComponent implements OnInit {
 

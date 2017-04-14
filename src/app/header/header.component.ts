@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser/platform-browser';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+
+  title = "保哥的網頁";
 
   constructor() { }
 

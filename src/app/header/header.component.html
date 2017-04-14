@@ -29,7 +29,9 @@
 
           <div class="pull-left">
             <h1><a href="http://blog.miniasp.com/">{{this.title}}</a></h1>
-            <h3>記載著 Will 在網路世界的學習心得與技術分享</h3>
+            <h3 [ngClass]="{'highlight' : is_h3_highlight}"
+                [ngStyle]="getStyle()"
+            (click)="is_h3_highlight = !is_h3_highlight;">記載著 Will 在網路世界的學習心得與技術分享</h3>
           </div>
 
           <div id="social-icons" class="pull-right social-icon">

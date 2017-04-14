@@ -21,4 +21,9 @@ export class HeaderComponent implements OnInit {
     console.log(evt.clientX);
   }
 
+  is_h3_highlight = false;
+
+  getStyle(){
+    return {"background-color": "yellow"};
+  }
 }

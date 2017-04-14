@@ -20,4 +20,5 @@ export class HeaderComponent implements OnInit {
     console.log(evt);
     console.log(evt.clientX);
   }
+
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -10,6 +10,9 @@ export class HeaderComponent implements OnInit {
   @Input()
   title = "保哥的網頁";
 
+  @Output()
+  titleChanged = new EventEmitter();
+
   constructor() { }
 
   ngOnInit() {
@@ -20,6 +23,7 @@ export class HeaderComponent implements OnInit {
   changeTitle(evt : MouseEvent){
     this.title = "Deom1 Title";
     this.counter++;
+    this.titleChanged.emit(this.title);
     console.log(evt);
     console.log(evt.clientX);
   }

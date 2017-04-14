@@ -14,4 +14,7 @@ export class AppComponent {
     this.keyword = ($event.target as HTMLInputElement).value;
   }
 
+  clearKeyword($event : KeyboardEvent){
+      this.keyword = "";
+  }
 }

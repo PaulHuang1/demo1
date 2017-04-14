@@ -1,5 +1,4 @@
-import { Title } from '@angular/platform-browser/platform-browser';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  @Input()
   title = "保哥的網頁";
 
   constructor() { }
@@ -23,6 +23,7 @@ export class HeaderComponent implements OnInit {
     console.log(evt);
     console.log(evt.clientX);
   }
+
 
   is_h3_highlight = false;
 

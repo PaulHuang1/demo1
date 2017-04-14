@@ -1,3 +1,4 @@
+import { DataService } from './data.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,9 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
 
   keyword = "";
+
+  constructor(public dataservice: DataService){
+  }
 
   changeKeyword(keyword){
     this.keyword = keyword;

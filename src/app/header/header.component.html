@@ -25,10 +25,10 @@
       <div class="title-wrapper">
         <div class="container">
 
-          <img src="/assets/images/logo.png" class="pull-left logo" alt="The Will Will Web" [title]="title"(click)="changeTitle($event)">
+          <img src="/assets/images/logo.png" class="pull-left logo" alt="The Will Will Web" [title]="dataservice.title"(click)="changeTitle($event)">
 
           <div class="pull-left">
-            <h1><a href="http://blog.miniasp.com/">{{this.title}}</a></h1>
+            <h1><a href="http://blog.miniasp.com/">{{dataservice.title}}</a></h1>
             <h3 [ngClass]="{'highlight' : is_h3_highlight}"
                 [ngStyle]="getStyle()"
                 (click)="is_h3_highlight = !is_h3_highlight;">記載著 Will 在網路世界的學習心得與技術分享</h3>
